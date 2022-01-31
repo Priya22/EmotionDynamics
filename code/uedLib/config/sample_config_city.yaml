@@ -1,0 +1,22 @@
+iden: Austin_2020
+data_path: data/tusc-city/2020/Austin
+disp_length_min: 10
+emoCols:
+- valence
+- arousal
+- dominance
+filter: true
+idCol:
+- City
+- Year
+level: 0.68
+lex_path: lexicons/NRC-VAD-Lexicon.txt
+min_tokens: 50
+min_turns: 100
+rollingWindow: 20
+save_dir: outputs/Austin_2020
+stopword_path: lexicons/stopwords.txt
+stopwords: true
+textCol: tweetText
+timeCol: createdAt
+textIdCol: tweetID

@@ -1,0 +1,3 @@
+[submodule "code/twTokenizer"]
+	path = code/twTokenizer
+	url = git@github.com:myleott/ark-twokenize-py.git
