@@ -18,3 +18,4 @@ stopwords: true
 textCol: tweetText
 timeCol: createdAt
 textIdCol: tweetID
+hb_type: SPK100

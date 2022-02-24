@@ -11,4 +11,4 @@ Data and Code for the paper XXXXX.
         - `lib/ued.py`: main UED module that takes a config file as input and outputs emotion dynamic metrics.
         - `config/`: sample config files for running UED on (a) a single file; (b) a folder with multiple CSV files.
 
-- `lexicons/`: Files with words and associated values for different emotion dimensions. 
+- `lexicons/`: Files with words and associated values for different emotion dimensions. Please see terms of use for these lexicons from their original source at http://saifmohammad.com/WebPages/lexicons.html
