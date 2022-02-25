@@ -33,7 +33,7 @@ The files in the `config/` folder enumerate the parameters that can be specified
     - SPK10: Mean and standard deviation used to determine home base will be calculated based on the first 10\% of the speaker's tweets/turns. 
 
 ## Outputs
-'tweet_info', 'narrative_info', 'displacement_info', 'overall_speaker_info'
+
 There are four main outputs that are written by the library. The outputs are written separately for each dimension `emoDim` specified in `config.emoCols`, and stored in the folder `config.save_dir/<emoDim>`. All files are written in compressed `gz` format.
 
 - **narrative_info**: Information on emotion state at each timestep.
