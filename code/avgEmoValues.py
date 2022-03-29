@@ -14,7 +14,7 @@ import logging
 tqdm.pandas()
 
 parser = ArgumentParser()
-parser.add_argument('--dataPath', help='path to CSV data file with tweet text')
+parser.add_argument('--dataPath', help='path to CSV data file with texts')
 parser.add_argument('--lexPath', help='path to lexicon. CSV with columns word, val')
 parser.add_argument('--lexName', help='Name of the lexicon')
 parser.add_argument('--savePath', help='path to save folder')
@@ -51,7 +51,7 @@ def get_vals(twt):
 def process_df(df):
     logging.info("Number of rows: " + str(len(df)))
 
-    resrows = [get_vals(x) for x in df['Tweet']]
+    resrows = [get_vals(x) for x in df['text']]
 
     resdf = pd.DataFrame(resrows, columns=['numTokens', 'numLexTokens', 'avgLexVal'])
     resdf = resdf[resdf['numLexTokens']>=1]
