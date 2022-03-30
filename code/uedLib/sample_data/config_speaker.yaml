@@ -1,0 +1,24 @@
+iden: bookSpeakers
+data_path: sample_data/sample_input.csv
+disp_length_min: 1
+emoCols:
+- valence
+- arousal
+- dominance
+filter: true
+idCol:
+- speaker
+- novel
+level: 0.68
+lex_path: lexicons/NRC-VAD-Lexicon.txt
+min_tokens: 5
+min_turns: 1
+rollingWindow: 5
+save_dir: sample_data/speaker_outputs/
+stopword_path: lexicons/stopwords.txt
+stopwords: true
+textCol: text
+timeCol: narrativeTime
+textIdCol: dialogueTurn
+hb_type: SPK100
+compress: False

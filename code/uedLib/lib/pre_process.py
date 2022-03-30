@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 def get_df(folder):
     
     if os.path.isfile(folder):
-        df = pd.read_csv(folder, compression='gzip', index_col=False)
+        df = pd.read_csv(folder)
         return df
 
     merged_df = None
@@ -25,7 +25,7 @@ def get_df(folder):
             print("Loading file: ", file.path)
             #assume dataframe
             try:
-                df = pd.read_csv(file.path, compression='gzip', index_col=False)
+                df = pd.read_csv(file.path)
 
                 if merged_df is None:
                     merged_df = df.copy()
@@ -42,7 +42,7 @@ def get_df(folder):
                     print("Loading file: ", subf.path)
                     #assume dataframe
                     try:
-                        df = pd.read_csv(subf.path, compression='gzip', index_col=False)
+                        df = pd.read_csv(subf.path)
                         if merged_df is None:
                             merged_df = df.copy()
                         
@@ -57,7 +57,7 @@ def prep(df, config):
     df = df.sort_values(by=config.timeCol)
     df['Turn'] = np.arange(len(df))
     config.timeCol = 'Turn'
-    if isinstance(config.idCol, list) and len(config.idCol) > 1:
+    if isinstance(config.idCol, list): #and len(config.idCol) > 1:
         for idc in config.idCol:
             df[idc] = df[idc].astype('str')
         df['idCol'] = df[config.idCol].agg('-'.join, axis=1)

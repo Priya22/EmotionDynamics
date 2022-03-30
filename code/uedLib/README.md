@@ -50,6 +50,7 @@ Various hyperparamters can be set before running the utterance emotion dynamics 
 - **hb_type**: Home base type. This can take two values:
     - SPK100: Mean and standard deviation used to determine home base will be calculated based on the entire speaker text. 
     - SPK10: Mean and standard deviation used to determine home base will be calculated based on the first 10\% of the speaker's tweets/turns. 
+- **compress**: Set to `true` if the outputs should be written in compressed `gzip` format, else false.
 
 ## How to Run
 Once you have the input and the configuration file ready, run the following command:
@@ -65,3 +66,16 @@ There are four main outputs that are written by the library. The outputs are wri
 - **overall_speaker_info**: Summary UED metrics for each speaker.
 - **tweet_info**: Information regarding tweet at each timestep.
 - **displacement_info**: Information regarding each displacement (displacement length, peak distance, rise and recovery rates).
+
+## Sample Data
+In the `sample_data` folder, we have included a file with sample data from a corpus of character dialogue in novels. Each row contains dialogue from a character, from one of 3 different novels. In the same folder, there are two config files:
+1. `config_speaker.yaml` provides parameters to compute UED metrics for each individual character as a speaker. Note that the data contains two speakers named "Elizabeth", one from the novel Pride and Prejudice, and another from the novel Persuasion. We therefore specify two columns as uniquely identifying the speaker in the config: `idCol` is set to `[speaker, novel]`. 
+2. `config_novel.yaml` provides parameters to compute UED metrics where each novel is considered a "speaker". 
+
+Run the following commands from the `uedLib` folder:
+
+    python3.7 lib/ued.py --config sample_data/config_speaker.yaml
+
+    python 3.7 lib/ued.py --config sample_data/config_novel.yaml
+
+The outputs will be written to the `sample_data/speaker_outputs` and `sample_data/novel_outputs` folders respectively.

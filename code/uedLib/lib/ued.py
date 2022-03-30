@@ -2,7 +2,7 @@ import numpy as np
 from numpy.lib.npyio import save
 import pandas as pd
 import nltk
-import os, re, sys, json, csv, string, os 
+import os, re, sys, json, csv, string, os, math
 import scipy 
 from tqdm import tqdm
 import argparse
@@ -27,8 +27,8 @@ except ModuleNotFoundError:
 
 parser = argparse.ArgumentParser(description="Run emotion dynamics")
 parser.add_argument('--config', metavar='FILE', help='path to the config file')
-parser.add_argument('--pre_process', type=str, help='Apply pre-processing to input [True, False]', default='False', required=False)
-parser.add_argument('--post_process', type=str, help='Apply post-processing to outputs [True, False]', default='False', required=False)
+parser.add_argument('--pre_process', type=str, help='Apply pre-processing to input [True, False]', default='True', required=False)
+parser.add_argument('--post_process', type=str, help='Apply post-processing to outputs [True, False]', default='True', required=False)
 
 tqdm.pandas()
 
@@ -49,13 +49,14 @@ def get_tenp_hb(sdf, config, edim):
     assert len(numTurns) == 1
     numTurns = numTurns[0]
 
-
     tenp = 0.1*numTurns
+    tenp = max(5, math.ceil(tenp))
 
-    dnums = sdf[config.dialogueIdCol].unique().tolist()[:tenp]
-    tdf = sdf[sdf[config.dialogueIdCol].isin(dnums)]
-    sdf[edim+'_emo_mean'] = np.nanmean(tdf)
-    sdf[edim+'_emo_std'] = np.nanstd(tdf)
+    dnums = sdf[config.textIdCol].unique().tolist()[:tenp]
+
+    tdf = sdf[sdf[config.textIdCol].isin(dnums)].sort_values(by='time_num')
+    sdf[edim+'_emo_mean'] = np.nanmean(tdf[edim])
+    sdf[edim+'_emo_std'] = np.nanstd(tdf[edim])
 
     return sdf
 
@@ -331,7 +332,7 @@ def main(config_path, post_p, pre_p):
 
     save_dir = config.save_dir
     if not os.path.isdir(save_dir):
-        os.mkdir(save_dir)
+        os.makedirs(save_dir, exist_ok=True)
 
     logfile = os.path.join(save_dir, 'log.txt')
 
@@ -362,7 +363,10 @@ def main(config_path, post_p, pre_p):
 
             for df, name in zip([clean_ued, clean_summ, dialoguedf, narrdf, displacementdf, speakerdf], \
                 ['ued_all', 'summ_all', 'tweet_info', 'narrative_info', 'displacement_info', 'overall_speaker_info']):
-                df.to_csv(os.path.join(edim_save_path, name+'.csv.gzip'), compression='gzip')
+                if str(config.compress).lower() == 'true':
+                    df.to_csv(os.path.join(edim_save_path, name+'.csv.gzip'), compression='gzip')
+                else:
+                    df.to_csv(os.path.join(edim_save_path, name+'.csv'))
 
     logging.info("Outputs written to " + str(save_dir))
 
