@@ -115,7 +115,9 @@ def ued(config, df):
     #add count columns
     df['NumTurns'] = df.groupby(idCol)[timeCol].transform('nunique')
 
-    lex = pd.read_csv(config.lex_path, sep='\t', header=None, names=['word', 'valence', 'arousal', 'dominance'])
+    # lex = pd.read_csv(config.lex_path, sep='\t', header=None, names=['word', 'valence', 'arousal', 'dominance'])
+    lex = pd.read_csv(config.lex_path)
+    
     lex.dropna(inplace=True)
     lex['word'] = lex['word'].astype('str')
     
@@ -158,7 +160,7 @@ def process_dimension(tdf, lex, edim, config):
     
     ldf = tdf.merge(lexdf, on='word', how='inner', sort=False).sort_values(by='row_num')
 
-    if config.min_tokens:
+    if isinstance(config.min_tokens, int):
         ldf = ldf.groupby(config.idCol).filter(lambda x: len(x)>=config.min_tokens)
 
     logging.info("Filtered to {} unique speakers".format(len(tdf[config.idCol].unique())))

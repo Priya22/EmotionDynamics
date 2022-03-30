@@ -10,7 +10,7 @@ idCol:
 - speaker
 - novel
 level: 0.68
-lex_path: lexicons/NRC-VAD-Lexicon.txt
+lex_path: lexicons/NRC-VAD-Lexicon.csv
 min_tokens: 5
 min_turns: 1
 rollingWindow: 5

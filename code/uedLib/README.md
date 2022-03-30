@@ -18,12 +18,14 @@ This document details the configurations, inputs and outputs of the Tweet Emotio
 UED metrics quantify how an individual speaker's emotions change over time. Section 5 of our paper describes briefly the original UED framework, and how we adapted it here to analyze tweets (Tweet Emotion Dynamics, or TED).
 
 ## Input
-The library expects the input to be formatted as a comma-separated (CSV) file, with the first line of the file indicating the names of the columns (header). Each row should contain information relating to a single tweet (or text turn).
+The library expects the input to be formatted as a comma-separated (CSV) file, with the first line of the file indicating the names of the columns (header). Each row should contain information relating to a single tweet (or text turn). 
 
 There are three fields that need to be present in the CSV:
 - The text column: contains the text of the tweet
 - The speaker column: a unique identifier indicating the speaker/tweeter
 - The time column: indicates the timestamp or temporal ordering of the tweet
+
+**Note**: You can specify the input path to be a *folder*, in which case all files in that folder will be concantenated into a single CSV file by the pre-processing code. If you use this option, please ensure that all the contained files in the folder are in the CSV format specified above, with the same column names.
 
 ## Configuration file
 Various hyperparamters can be set before running the utterance emotion dynamics code. The files in the `config/` folder demonstrate two sample configurations.
@@ -37,8 +39,8 @@ Various hyperparamters can be set before running the utterance emotion dynamics 
 - **level**: The range of distribution values to be considered as the home base. The default value of 0.68 is `mean`+/-`std_dev` for a normal distribution.
 - **lex_path**: Path to the lexicon. Must be a CSV with column headers, where one column called `word` must exist, along with the dimensions listed in `emoCols`. 
 
-    The file `lexicons/NRC-VAD-Lexicon.txt` demonstrates the required format -- **please download your required lexicons from the original source and read the associated terms of use**. The homepage for this particular lexicon is at http://saifmohammad.com/WebPages/nrc-vad.html.
-- **min_tokens**: Minimum number of tokens by a speaker that must be present in the lexicon to be considered.
+    The file `lexicons/NRC-VAD-Lexicon.csv` demonstrates the required format -- **please download your required lexicons from the original source and read the associated terms of use**. The homepage for this particular lexicon is at http://saifmohammad.com/WebPages/nrc-vad.html.
+- **min_tokens**: Minimum number of tokens by a speaker that must be present in the lexicon to be considered. Set to false if you do not want this filter.
 - **min_turns**: Minimum number of tweets by a speaker that must be present to be considered. Set to false if you do not want this filter.
 - **rollingWindow**: Size of the rolling window, in number of tokens
 - **save_dir**: Path to the directory where outputs will be stored

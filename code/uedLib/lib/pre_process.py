@@ -35,21 +35,21 @@ def get_df(folder):
             except Exception as e:
                 print("Failed to load: ", file.path)
         
-        elif os.path.isdir(file):
-            print("Loading folder: ", file.path)
-            for subf in os.scandir(file):
-                if os.path.isfile(subf.path):
-                    print("Loading file: ", subf.path)
-                    #assume dataframe
-                    try:
-                        df = pd.read_csv(subf.path)
-                        if merged_df is None:
-                            merged_df = df.copy()
+        # elif os.path.isdir(file):
+        #     print("Loading folder: ", file.path)
+        #     for subf in os.scandir(file):
+        #         if os.path.isfile(subf.path):
+        #             print("Loading file: ", subf.path)
+        #             #assume dataframe
+        #             try:
+        #                 df = pd.read_csv(subf.path)
+        #                 if merged_df is None:
+        #                     merged_df = df.copy()
                         
-                        else:
-                            merged_df = pd.concat([merged_df, df])
-                    except Exception as e:
-                        print("Failed to load: ", subf.path)
+        #                 else:
+        #                     merged_df = pd.concat([merged_df, df])
+        #             except Exception as e:
+        #                 print("Failed to load: ", subf.path)
     return merged_df
 
 def prep(df, config):
