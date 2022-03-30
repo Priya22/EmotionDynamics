@@ -1,0 +1,8 @@
+HTMLParser==0.0.2
+nltk==3.6.1
+numpy==1.20.1
+pandas==1.2.4
+python_box==5.4.1
+PyYAML==6.0
+scipy==1.6.2
+tqdm==4.59.0
