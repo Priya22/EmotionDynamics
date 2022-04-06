@@ -1,13 +1,42 @@
-Data and Code for the paper XXXXX.
+# Emotion Dynamics
 
+Emotion dynamics is a framework for measuring how an individual’s emotions change over time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) first introduced the framework and applied it to a dataset of movie dialogues. Their Utterance Emotion Dynamics (UED) framework quantifies emotion state in a 2-dimensional elliptical space of valence--arousal. Their R code can be found at https://github.com/whipson/edyn. 
+
+Here, we re-formulate the emotion dynamics framework along uni-dimensional axes of valence, arousal, and dominance, and provide Python scripts that can be used to appy the analysis to any temporally-ordered text.
+
+If you use any of the resources provided in this repository, cite the following work:
+
+        TBD
+
+If you the emotion dynamics framework for your dataset, also cite the following work:
+
+    @article{hipson2021emotion,
+    doi = {10.1371/journal.pone.0256153},
+    author = {Hipson, Will E. AND Mohammad, Saif M.},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Emotion dynamics in movie dialogues},
+    year = {2021},
+    month = {09},
+    volume = {16},
+    url = {https://doi.org/10.1371/journal.pone.0256153},
+    pages = {1-19}
+}
 ## What does this repository provide?
 
-This repository is intended as a companion to the paper XXX, and consists of two main submodules:
-1. The TUSC tweet dataset described in the paper 
-2. Code to run the Tweet Emotion Dynamics (TED) analyses described in the paper. The code has been designed to work with any temporally-ordered text data, including but not limited to tweets. See the Readme within the `code` folder for further instructions.
+This repository consists of two main submodules:
+
+1. Code to run the Emotion Dynamics framework. The code has been designed to work with any temporally-ordered text data, including but not limited to tweets. See the Readme within the [`code`](https://github.com/Priya22/TweetDynamics/tree/master/code) folder for further instructions.
+
+2. The TUSC tweet dataset described in the paper [Tweet Emotion Dynamics:
+Emotion Word Usage in Tweets from US and Canada]().
+
+## Where can you use the Emotion Dynamics framework?
+The framework can be used to characterize the emotional state and trajectory of a speaker via their textual utterances over a period of time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply it to analyze characters in a corpus of movie dialogues. The `code` folder of this repository shows a sample usage on character dialogue in literary novels. Our Tweet Dyanmics work applies it to individual tweeters -- one can do so with data other social media platforms as well (Reddit, for example).
+
 ## What is Tweet Emotion Dynamics?
 
-Tweet Emotion Dynamics, or TED, is a set of metrics that quantify the emotional characteristics of a set of tweets and tweeters. A large portion of the metrics are directly adapted from the Utterance Emotion Dynamics (UED) framework of {CITE}. 
+Tweet Emotion Dynamics, or TED, is a set of metrics that quantify the emotional characteristics of a set of tweets and tweeters. A large portion of the metrics are directly adapted from the Utterance Emotion Dynamics (UED) framework of [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153). 
 
 These metrics can be broadly described by the following three questions:
 1. On average, what is the emotion score of the tweets for a particular tweeter? (Section 4.1)
@@ -87,6 +116,14 @@ Any analysis involving the use of emotion and sentiment lexicons must be precede
 
 2. This [Ethics Sheets for AI Tasks](https://arxiv.org/abs/2107.01183) presents a more general framework, and ethics sheet, for thinking about the ethical consideratios involved in any AI task.
 
+3. [This paper](https://arxiv.org/abs/2011.03492) details ethical considerations involved in the use of emotion lexicons in general.
+
+## Authors
+For any queries, you can contact the authors:
+- [Krishnapriya Vishnubhotla](https://priya22.github.io/) (University of Toronto)
+- [Saif M. Mohammad](http://saifmohammad.com/) (National Research Council Canada)
+
+**Contact:** vkpriya@cs.toronto.edu, saif.mohammad@nrc-cnrc.gc.ca
 
 
 

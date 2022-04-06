@@ -30,7 +30,7 @@ This code was tested with `python3.7` (but should work well with later versions 
 
         python avgEmoValues.py --dataPath sample_data/sample_input.csv --lexPath lexicons/NRC-VAD-Lexicon.csv --lexNames valence dominance --savePath sample_data/sample_outputs
 
-2. `uedLib`: This folder contains code associated with the TED metrics. Please see the README file within this folder for a complete description.
+2. `uedLib`: This folder contains code associated with the Emotion Dynamics metrics. Please see the [README file](https://github.com/Priya22/TweetDynamics/tree/master/code/uedLib) within this folder for a complete description.
 
 
 
