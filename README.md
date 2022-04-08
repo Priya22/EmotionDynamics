@@ -1,14 +1,29 @@
 # Emotion Dynamics
 
-Emotion dynamics is a framework for measuring how an individual’s emotions change over time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) first introduced the framework and applied it to a dataset of movie dialogues. Their Utterance Emotion Dynamics (UED) framework quantifies emotion state in a 2-dimensional elliptical space of valence--arousal. Their R code can be found at https://github.com/whipson/edyn. 
+<!-- Emotion dynamics is a framework for measuring how an individual’s emotions change over time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) first introduced the framework and applied it to a dataset of movie dialogues. Their Utterance Emotion Dynamics (UED) framework quantifies emotion state in a 2-dimensional elliptical space of valence--arousal. Their R code can be found at https://github.com/whipson/edyn. 
 
-Here, we re-formulate the emotion dynamics framework along uni-dimensional axes of valence, arousal, and dominance, and provide Python scripts that can be used to appy the analysis to any temporally-ordered text.
+Here, we re-formulate the emotion dynamics framework along uni-dimensional axes of valence, arousal, and dominance, and provide Python scripts that can be used to appy the analysis to any temporally-ordered text. -->
+Emotion dynamics is a framework from Psychology for measuring how an individual’s emotional state changes over time ([Hollenstein, 2015](https://journals.sagepub.com/doi/10.1177/1754073915590621); [Kuppens and Verduyn, 2017](https://www.sciencedirect.com/science/article/pii/S2352250X16302019?via%3Dihub)). [Hipson and Mohammad (2020)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) introduced an analogous framework for changes in emotional state associated with one's utterances. They refer to it as Utterance Emotion Dynamics (UED). Specifically, they proposed a set of metrics (such as home base, density, variability, rise rate, etc.) that quantify various characteristics of change in one's emotional state as reflected in their utterances. This Python package allows the user to calculate these UED metrics from text.
+
+To calculate the UED metrics one needs to specify:
+
+1. Utterances by various speakers
+2. Temporal information about the utterances, for e.g., time stamps associated with the utterances, or simply an ordering of utterances by time (even if the exact time of utterance is not known)
+3. How to capture emotion states associated with the text 
+
+This package allows one to capture emotion states using features drawn from emotion lexicons such as the NRC VAD Lexicon. Rolling windows of words (moving forward one-word at a time) determine the sequence of emotional states. (UED metrics can be calculated using other forms of emotion features too, e.g., predictions of supervised emotion detection systems on individual utterances; however, that is not supported yet.) Further details about the code and input specifications can be found in the [code](https://github.com/Priya22/EmotionDynamics/tree/master/code) folder of this repository.
 
 If you use any of the resources provided in this repository, cite the following work:
 
-        TBD
+        @inproceedings{VM2022-TED,
+        title={Tweet Emotion Dynamics: Emotion Word Usage in Tweets from US   and Canada},
+        author={Krishnapriya Vishnubhotla and Saif M. Mohammad},
+        booktitle={Proceedings of the Thirteenth International Conference on Language Resources and Evaluation (LREC 2022)},
+        address={Marseille, France},
+        year={2022}
+        }
 
-If you the emotion dynamics framework for your dataset, also cite the following work:
+If you use the emotion dynamics package for your dataset, also cite the following work:
 
     @article{hipson2021emotion,
     doi = {10.1371/journal.pone.0256153},
@@ -33,6 +48,11 @@ Emotion Word Usage in Tweets from US and Canada]().
 
 ## Where can you use the Emotion Dynamics framework?
 The framework can be used to characterize the emotional state and trajectory of a speaker via their textual utterances over a period of time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply it to analyze characters in a corpus of movie dialogues. The `code` folder of this repository shows a sample usage on character dialogue in literary novels. Our Tweet Dyanmics work applies it to individual tweeters -- one can do so with data other social media platforms as well (Reddit, for example).
+
+### Hipson and Mohammed (2021)
+[Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply the UED framework to utterances from a corpus of movie dialogues, which are naturally ordered along a temporal axis. 
+They represented emotional state in a two-dimensional valence--arousal space. The co-ordinates are determined by the average valence and arousal scores of the words (using the NRC VAD lexicon)
+in a small window of recent utterances (usually spanning 20 to 50 words).  Rolling windows of words (moving forward one-word at a time) determine the sequence of emotional states. Here, we apply that framework to tweets. However, in this work we consider each of the valence, arousal, and dominance dimensions separately (separate one-dimensional axes). Their R code can be found at https://github.com/whipson/edyn.
 
 ## What is Tweet Emotion Dynamics?
 

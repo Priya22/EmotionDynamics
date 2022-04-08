@@ -1,21 +1,7 @@
-# UED Metrics
-This document details the configurations, inputs and outputs of the Tweet Emotion Dynamics framework, which adapts the Utterance Emotion Dynamics frameword of [Hipson and Mohammad, 2021](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) to tweets. Cite the following work if you use this framework:
-
-    @article{hipson2021emotion,
-        doi = {10.1371/journal.pone.0256153},
-        author = {Hipson, Will E. AND Mohammad, Saif M.},
-        journal = {PLOS ONE},
-        publisher = {Public Library of Science},
-        title = {Emotion dynamics in movie dialogues},
-        year = {2021},
-        month = {09},
-        volume = {16},
-        url = {https://doi.org/10.1371/journal.pone.0256153},
-        pages = {1-19}
-    }
-
-## What do UED metrics tell us?
-UED metrics quantify how an individual speaker's emotions change over time. Section 5 of our paper describes briefly the original UED framework, and how we adapted it here to analyze tweets (Tweet Emotion Dynamics, or TED).
+# Emotion Dynamics Metrics
+This document details the configurations, inputs and outputs needed to run the emotion dynamics scripts on your own dataset. 
+## What do the metrics tell us?
+Emotion Dynamics metrics quantify how an individual speaker's emotions change over time. Section 5 of our paper describes briefly the original UED framework, and how we adapted it here to analyze tweets (Tweet Emotion Dynamics, or TED).
 
 ## Input
 The library expects the input to be formatted as a comma-separated (CSV) file, with the first line of the file indicating the names of the columns (header). Each row should contain information relating to a single tweet (or text turn). 
