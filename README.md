@@ -11,7 +11,7 @@ To calculate the UED metrics one needs to specify:
 2. Temporal information about the utterances, for e.g., time stamps associated with the utterances, or simply an ordering of utterances by time (even if the exact time of utterance is not known)
 3. How to capture emotion states associated with the text 
 
-This package allows one to capture emotion states using features drawn from emotion lexicons such as the NRC VAD Lexicon. Rolling windows of words (moving forward one-word at a time) determine the sequence of emotional states. (UED metrics can be calculated using other forms of emotion features too, e.g., predictions of supervised emotion detection systems on individual utterances; however, that is not supported yet.) Further details about the code and input specifications can be found in the [code](https://github.com/Priya22/EmotionDynamics/tree/master/code) folder of this repository.
+This package allows one to capture emotion states using features drawn from emotion lexicons such as the <a href="http://saifmohammad.com/WebPages/nrc-vad.html">NRC VAD Lexicon</a>. Rolling windows of words (moving forward one-word at a time) determine the sequence of emotional states. (UED metrics can be calculated using other forms of emotion features too, e.g., predictions of supervised emotion detection systems on individual utterances; however, that is not supported yet.) Further details about the code and input specifications can be found in the [code](https://github.com/Priya22/EmotionDynamics/tree/master/code) folder of this repository.
 
 If you use any of the resources provided in this repository, cite the following work:
 
