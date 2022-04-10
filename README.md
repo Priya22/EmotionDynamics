@@ -47,7 +47,7 @@ This repository consists of two main submodules:
 Emotion Word Usage in Tweets from US and Canada]().
 
 ## Where can you use the Emotion Dynamics framework?
-The framework can be used to characterize the emotional state and trajectory of a speaker via their textual utterances over a period of time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply it to analyze characters in a corpus of movie dialogues. The `code` folder of this repository shows a sample usage on character dialogue in literary novels. Our Tweet Dyanmics work applies it to individual tweeters -- one can do so with data other social media platforms as well (Reddit, for example).
+The framework can be used to characterize the emotional state and trajectory of a speaker via their textual utterances over a period of time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply it to analyze characters in a corpus of movie dialogues. The `code` folder of this repository shows a sample usage on character dialogue in literary novels. Our Tweet Dyanmics work applies it to individual tweeters -- one can do so with other data as well (e.g., posts from Reddit, self-reported diaries, political discussions, etc.).
 
 ### Hipson and Mohammed (2021)
 [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply the UED framework to utterances from a corpus of movie dialogues, which are naturally ordered along a temporal axis. 
@@ -131,12 +131,13 @@ The following lexicons are provided for ease of running the code in the `lexicon
 
 ## Ethical Considerations
 
-Any analysis involving the use of emotion and sentiment lexicons must be preceded by a consideration of the ethical ramifications of doing the same, and the intended as well as potential uses of the associated results and tools. 
-1. This [Ethics Sheet for Automatic Emotion Recognition and Sentiment Analysis](https://arxiv.org/abs/2109.08256) presents fifty ethical considerations relevant to the use of Automatic Emotion Recognition (AER) systems.
+Any analysis involving the use of emotion and sentiment lexicons must be preceded by a consideration of the relevant ethical ramifications, and the intended as well as potential uses of the associated results and tools. See the papers below: 
+1. [Ethics Sheet for Automatic Emotion Recognition and Sentiment Analysis](https://arxiv.org/abs/2109.08256): for fifty ethical considerations relevant to the use of Automatic Emotion Recognition (AER) systems.
 
-2. This [Ethics Sheets for AI Tasks](https://arxiv.org/abs/2107.01183) presents a more general framework, and ethics sheet, for thinking about the ethical consideratios involved in any AI task.
+2. [Ethics Sheets for AI Tasks](https://arxiv.org/abs/2107.01183): for a more general framework, and ethics sheet, for thinking about the ethical consideratios involved in any AI task.
 
-3. [This paper](https://arxiv.org/abs/2011.03492) details ethical considerations involved in the use of emotion lexicons in general.
+3. [Practical and Ethical Considerations in the Effective use of Emotion and Sentiment Lexicons](https://arxiv.org/abs/2011.03492):
+for specific tips and considerations in the use of emotion lexicons.
 
 ## Authors
 For any queries, you can contact the authors:
