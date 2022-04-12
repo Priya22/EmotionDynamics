@@ -44,7 +44,7 @@ This repository consists of two main submodules:
 1. Code to run the Emotion Dynamics framework. The code has been designed to work with any temporally-ordered text data, including but not limited to tweets. See the Readme within the [`code`](https://github.com/Priya22/TweetDynamics/tree/master/code) folder for further instructions.
 
 2. The TUSC tweet dataset described in the paper [Tweet Emotion Dynamics:
-Emotion Word Usage in Tweets from US and Canada]().
+Emotion Word Usage in Tweets from US and Canada](https://arxiv.org/abs/2204.04862).
 
 ## Where can you use the Emotion Dynamics framework?
 The framework can be used to characterize the emotional state and trajectory of a speaker via their textual utterances over a period of time. [Hipson and Mohammad](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256153) apply it to analyze characters in a corpus of movie dialogues. The `code` folder of this repository shows a sample usage on character dialogue in literary novels. Our Tweet Dyanmics work applies it to individual tweeters -- one can do so with data other social media platforms as well (Reddit, for example).
