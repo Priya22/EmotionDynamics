@@ -16,7 +16,7 @@ This package allows one to capture emotion states using features drawn from emot
 If you use any of the resources provided in this repository, cite the following work:
 
         @inproceedings{VM2022-TED,
-        title={Tweet Emotion Dynamics: Emotion Word Usage in Tweets from US   and Canada},
+        title={Tweet Emotion Dynamics: Emotion Word Usage in Tweets from US and Canada},
         author={Krishnapriya Vishnubhotla and Saif M. Mohammad},
         booktitle={Proceedings of the Thirteenth International Conference on Language Resources and Evaluation (LREC 2022)},
         address={Marseille, France},
