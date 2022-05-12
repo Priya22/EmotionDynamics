@@ -9,7 +9,7 @@ import argparse
 import yaml
 from box import Box
 import logging
-
+import time
 try:
     import lib.utils as utils
 except ModuleNotFoundError:
@@ -98,19 +98,16 @@ def read_stopwords(path):
 
 def ued(config, df):
 
-    
     textCol = config.textCol
     idCol = config.idCol
     timeCol = config.timeCol
     emoCols = config.emoCols
 
-
     logging.info("Number of speakers: " + str(len(df[idCol].unique())))
 
-            
 
-    assert textCol in df.columns, print(textCol + " not found in data!")
-    assert timeCol in df.columns, print(timeCol + ' not found in data')
+    assert textCol in df.columns, logging.info(textCol + " not found in data!")
+    assert timeCol in df.columns, logging.info(timeCol + ' not found in data')
 
     #add count columns
     df['NumTurns'] = df.groupby(idCol)[timeCol].transform('nunique')
@@ -125,7 +122,7 @@ def ued(config, df):
 
 
     for col in emoCols:
-        assert col in lex.columns, print(col + " not found in lexicon.")
+        assert col in lex.columns, logging.info(col + " not found in lexicon.")
 
     if isinstance(config.min_turns, int):
         # min_turns = int(config.min_turns)
@@ -142,15 +139,16 @@ def ued(config, df):
     res_dict = {}
 
     for edim in emoCols:
+        logging.info("Computing metrics for dimension: {}".format(edim))
         emoverbose, emosummary = process_dimension(tdf, lex, edim, config)
         res_dict[edim] = [emoverbose, emosummary]
 
     return res_dict
 
 
-
-
 def process_dimension(tdf, lex, edim, config):
+    start_time = time.time()
+    logging.info("Step 1: Generating sequence of emotion states")
 
     lexdf = lex[['word', edim]]
 
@@ -164,6 +162,8 @@ def process_dimension(tdf, lex, edim, config):
         ldf = ldf.groupby(config.idCol).filter(lambda x: len(x)>=config.min_tokens)
 
     logging.info("Filtered to {} unique speakers".format(len(tdf[config.idCol].unique())))
+
+    ldf['number_emo_words'] = ldf.groupby(by=config.idCol)['row_num'].transform('nunique')
 
     ldf = ldf.sort_values(by=[config.idCol, config.timeCol, 'row_num'])
 
@@ -194,14 +194,16 @@ def process_dimension(tdf, lex, edim, config):
     data = hb_func(data, config, edim)
 
     emoData = data.groupby(config.idCol).apply(utils.in_range, emoCol=edim, level=level)
+    logging.info("Done in {} seconds".format(time.time()-start_time))
     emoverbose, emosummary = line_analysis(emoData, config, edim)
-
 
     return emoverbose, emosummary
 
  
 def line_analysis(data, config, emoCol):
-    print(emoCol)
+    # print(emoCol)
+    logging.info("Step 2: computing UED metrics")
+    start = time.time()
 
     idCol = config.idCol
 
@@ -296,8 +298,8 @@ def line_analysis(data, config, emoCol):
     cols = list(set(cols))
 
 
-    op = data.groupby(idCol).agg(agg_cols)
-    op.drop(columns=['disp_num', 'is_peak'], inplace=True)
+    op = data.groupby(idCol).agg(agg_cols).reset_index()
+    op.drop(columns=['disp_num', 'is_peak', 'disp_dist'], inplace=True)
 
 
     common_cols = ['in_home_base', 'dist_home_base',
@@ -318,6 +320,9 @@ def line_analysis(data, config, emoCol):
     for col in common_cols:
         nc = emoCol + '_' + col 
         op.rename({col: nc}, axis='columns', inplace=True)
+
+    logging.info("Done in {} seconds ".format(time.time()-start))
+    print()
 
     return data, op
     
@@ -340,9 +345,10 @@ def main(config_path, post_p, pre_p):
 
     logging.basicConfig(filename=logfile, format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
+                    filemode='w',
                     level=logging.INFO)
-    
-    config.to_yaml(os.path.join(save_dir, 'config.yaml'))
+
+    logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
     df = pre_process.get_df(config.data_path)
     
@@ -352,25 +358,28 @@ def main(config_path, post_p, pre_p):
     if prep:
         df, config = pre_process.prep(df, config)
 
+    config.to_yaml(os.path.join(save_dir, 'config.yaml'))
+
     res_dict = ued(config, df)
 
     for edim in res_dict:
         data, summary = res_dict[edim]
 
         if pp:
-            clean_ued, clean_summ, dialoguedf, narrdf, displacementdf, speakerdf = post_process.divvy_dfs(data, summary, config)
-
+            clean_ued, clean_summ, dialoguedf, narrdf, displacementdf, speakerdf = post_process.divvy_dfs(data, summary, config, edim)
+            
             edim_save_path = os.path.join(save_dir, edim)
             os.makedirs(edim_save_path, exist_ok=True)
 
             for df, name in zip([clean_ued, clean_summ, dialoguedf, narrdf, displacementdf, speakerdf], \
-                ['ued_all', 'summ_all', 'tweet_info', 'narrative_info', 'displacement_info', 'overall_speaker_info']):
+                ['ued_all', 'summ_all', 'utterance_info', 'narrative_info', 'displacement_info', 'overall_speaker_info']):
                 if str(config.compress).lower() == 'true':
                     df.to_csv(os.path.join(edim_save_path, name+'.csv.gzip'), compression='gzip')
                 else:
-                    df.to_csv(os.path.join(edim_save_path, name+'.csv'))
+                    df.to_csv(os.path.join(edim_save_path, name+'.csv'), index=False)
 
     logging.info("Outputs written to " + str(save_dir))
+    # print("Outputs written to " + str(save_dir))
 
 if __name__ == '__main__':
     args = parser.parse_args()

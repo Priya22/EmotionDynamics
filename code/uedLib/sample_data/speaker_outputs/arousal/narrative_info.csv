@@ -1,0 +1,76 @@
+Identifier,speaker_id,emotion,speaker_utterance_index,global_utterance_index,speaker_rolling_window_index,speaker_word_index,speaker_word,speaker_emo_state_position,speaker_emo_state_is_peak,speaker_emo_displacement_counter,speaker_emo_displacement_number,speaker_emo_state_value,speaker_emo_in_home_base,speaker_emo_distance_home_base
+bookSpeakers,Dr. Watson-SignOfFour,arousal,1,21,0,1,impulse,HOME,,,,0.5357999999999999,1.0,0.0
+bookSpeakers,Dr. Watson-SignOfFour,arousal,2,81,1,2,force,HOME,,,,0.6447999999999999,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,2,1,thought,HOME,,,,0.391,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,3,2,thought,HOME,,,,0.3912,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,4,3,state,HOME,,,,0.3892,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,5,4,clear,LOW,1.0,0.0,1.0,0.3016,0.0,0.0817750243320659
+bookSpeakers,Emma-Emma,arousal,1,228,6,5,happen,HOME,,,,0.3894,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,7,6,desirable,HOME,,,,0.4734,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,8,7,congratulate,HIGH,1.0,0.0,2.0,0.5552,0.0,0.01846733202437345
+bookSpeakers,Emma-Emma,arousal,1,228,9,8,thing,HOME,,,,0.5356000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,10,9,proper,HOME,,,,0.5326,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,11,10,close,HOME,,,,0.4506,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,12,11,intimacy,HOME,,,,0.4640000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,1,228,13,12,raise,HOME,,,,0.45620000000000005,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,2,245,14,13,leave,HOME,,,,0.4748,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,2,245,15,14,dare,HIGH,0.0,-1.0,3.0,0.5700000000000001,0.0,0.033267332024373486
+bookSpeakers,Emma-Emma,arousal,2,245,16,15,pass,HIGH,1.0,0.0,3.0,0.5828,0.0,0.04606733202437341
+bookSpeakers,Emma-Emma,arousal,2,245,17,16,soft,HOME,,,,0.4582,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,2,245,18,17,eyes,LOW,0.0,-3.0,4.0,0.377,0.0,0.006375024332065882
+bookSpeakers,Emma-Emma,arousal,2,245,19,18,time,LOW,0.0,-2.0,4.0,0.37160000000000004,0.0,0.011775024332065842
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,arousal,1,431,20,1,pleasure,HOME,,,,0.3278,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,1,170,21,1,velocity,HIGH,1.0,0.0,1.0,0.5842,0.0,0.10673933507654743
+bookSpeakers,Dr. Watson-SignOfFour,arousal,3,192,22,3,death,HIGH,0.0,-1.0,1.0,0.7436,0.0,0.01473232640290112
+bookSpeakers,Dr. Watson-SignOfFour,arousal,3,192,23,4,powerful,HIGH,1.0,0.0,1.0,0.7704000000000001,0.0,0.041532326402901165
+bookSpeakers,Dr. Watson-SignOfFour,arousal,3,192,24,5,vegetable,HOME,,,,0.6519999999999999,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,25,2,clear,HIGH,0.0,1.0,1.0,0.4888,0.0,0.011339335076547385
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,26,3,room,HOME,,,,0.3658,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,27,4,wooden,HOME,,,,0.364,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,28,5,inner,HOME,,,,0.35819999999999996,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,29,6,coupled,LOW,0.0,-2.0,2.0,0.26159999999999994,0.0,0.016739335076547457
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2,220,30,7,palm,LOW,0.0,-1.0,2.0,0.23500000000000001,0.0,0.043339335076547386
+bookSpeakers,Dr. Watson-SignOfFour,arousal,4,272,31,6,mere,HOME,,,,0.5282,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,3,895,32,19,marry,LOW,0.0,-1.0,4.0,0.367,0.0,0.01637502433206589
+bookSpeakers,Emma-Emma,arousal,3,895,33,20,thought,LOW,1.0,0.0,4.0,0.36519999999999997,0.0,0.018175024332065914
+bookSpeakers,Emma-Emma,arousal,3,895,34,21,offer,HOME,,,,0.4784,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,3,327,35,8,thing,LOW,1.0,0.0,2.0,0.22279999999999997,0.0,0.05553933507654743
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,4,346,36,9,happen,HOME,,,,0.3176,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,5,355,37,10,feeling,HOME,,,,0.3402,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,5,355,38,11,tired,HOME,,,,0.34640000000000004,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,5,355,39,12,idleness,HOME,,,,0.37360000000000004,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,5,355,40,13,easy,HOME,,,,0.36800000000000005,1.0,0.0
+bookSpeakers,Dr. Watson-SignOfFour,arousal,5,360,41,7,south,LOW,1.0,0.0,2.0,0.4312,0.0,0.07021804068861504
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,6,473,42,14,case,HOME,,,,0.28900000000000003,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,6,473,43,15,liquor,HOME,,,,0.36360000000000003,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,6,473,44,16,thought,HOME,,,,0.36319999999999997,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,7,482,45,17,full,HOME,,,,0.3482,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,7,482,46,18,speed,HIGH,0.0,-1.0,3.0,0.47919999999999996,0.0,0.0017393350765473325
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,7,482,47,19,launch,HIGH,1.0,0.0,3.0,0.587,0.0,0.10953933507654734
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,7,482,48,20,yellow,HIGH,0.0,1.0,3.0,0.5016,0.0,0.02413933507654742
+bookSpeakers,Elizabeth-Persuasion,arousal,1,398,49,1,clay,HOME,,,,0.3542,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,50,2,game,HOME,,,,0.46560000000000007,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,51,3,overcome,HOME,,,,0.5454,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,52,4,excessively,HIGH,1.0,0.0,1.0,0.5848,0.0,0.0069095613561707125
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,53,5,omit,HOME,,,,0.5748,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,54,6,opportunity,HIGH,1.0,0.0,2.0,0.6738,0.0,0.09590956135617068
+bookSpeakers,Elizabeth-Persuasion,arousal,2,400,55,7,sir,HOME,,,,0.5773999999999999,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,56,8,book,HOME,,,,0.4816,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,57,9,read,HOME,,,,0.3618,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,58,10,thought,HOME,,,,0.3718,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,59,11,dress,LOW,1.0,0.0,3.0,0.2828,0.0,0.06626340751001686
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,60,12,hideous,HOME,,,,0.3716,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,arousal,3,405,61,13,formal,HOME,,,,0.3796,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,1,1141,62,1,aunt,HOME,,,,0.6234,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,1,1141,63,2,marry,HIGH,1.0,0.0,1.0,0.6283999999999998,0.0,0.002475344365785892
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,1,1141,64,3,accept,HOME,,,,0.6201999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2,1186,65,4,betrayed,HOME,,,,0.5843999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2,1186,66,5,concerned,HOME,,,,0.5618,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2,1186,67,6,rest,HOME,,,,0.5369999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2,1186,68,7,till,LOW,0.0,-1.0,2.0,0.44939999999999997,0.0,0.036775344365785945
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2,1186,69,8,compassion,LOW,1.0,0.0,2.0,0.4438,0.0,0.04237534436578594
+bookSpeakers,Emma-Emma,arousal,4,1525,70,22,building,HOME,,,,0.48019999999999996,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,5,1583,71,23,suspect,HIGH,1.0,0.0,5.0,0.5726000000000001,0.0,0.03586733202437353
+bookSpeakers,Emma-Emma,arousal,5,1583,72,24,midst,HOME,,,,0.4746,1.0,0.0
+bookSpeakers,Emma-Emma,arousal,5,1583,73,25,amusement,HIGH,1.0,0.0,6.0,0.579,0.0,0.04226733202437338
+bookSpeakers,Emma-Emma,arousal,5,1583,74,26,consolation,HOME,,,,0.48,1.0,0.0

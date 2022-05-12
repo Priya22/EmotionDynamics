@@ -1,0 +1,22 @@
+2022-05-12 03:23:00 - Number of speakers: 6
+2022-05-12 03:23:00 - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2022-05-12 03:23:00 - NumExpr defaulting to 8 threads.
+2022-05-12 03:23:00 - Computing metrics for dimension: valence
+2022-05-12 03:23:00 - Step 1: Generating sequence of emotion states
+2022-05-12 03:23:00 - Filtered to 6 unique speakers
+2022-05-12 03:23:00 - Done in 0.06934046745300293 seconds
+2022-05-12 03:23:00 - Step 2: computing UED metrics
+2022-05-12 03:23:01 - Done in 0.18385076522827148 seconds 
+2022-05-12 03:23:01 - Computing metrics for dimension: arousal
+2022-05-12 03:23:01 - Step 1: Generating sequence of emotion states
+2022-05-12 03:23:01 - Filtered to 6 unique speakers
+2022-05-12 03:23:01 - Done in 0.07016658782958984 seconds
+2022-05-12 03:23:01 - Step 2: computing UED metrics
+2022-05-12 03:23:01 - Done in 0.21770596504211426 seconds 
+2022-05-12 03:23:01 - Computing metrics for dimension: dominance
+2022-05-12 03:23:01 - Step 1: Generating sequence of emotion states
+2022-05-12 03:23:01 - Filtered to 6 unique speakers
+2022-05-12 03:23:01 - Done in 0.06633615493774414 seconds
+2022-05-12 03:23:01 - Step 2: computing UED metrics
+2022-05-12 03:23:01 - Done in 0.1679980754852295 seconds 
+2022-05-12 03:23:01 - Outputs written to sample_data/speaker_outputs/

@@ -72,7 +72,6 @@ These metrics can be broadly described by the following three questions:
     - `uedLib`/: code to run emotion dynamics on tweet data. 
         - `run_ued.py`: sample call to the main UED library.
         - `lib/ued.py`: main UED module that takes a config file as input and outputs emotion dynamic metrics.
-        - `config/`: sample config files for running UED on (a) a single file; (b) a folder with multiple CSV files.
 
 - `lexicons/`: Files with words and associated values for different emotion dimensions. 
 

@@ -1,0 +1,16 @@
+Identifier,speaker_id,emotion,speaker_emo_displacement_number,displacement_peak_dist,displacment_length,displacement_rise_rate,displacement_recovery_rate,displacement_position,displacement_home-to-low_rate,displacement_low-to-home_rate,displacement_home-to-high_rate,displacement_high-to-home_rate
+bookSpeakers,Dr. Watson-SignOfFour,dominance,1.0,0.004569397182906942,1.0,,,LOW,,,,
+bookSpeakers,Elizabeth-Persuasion,dominance,1.0,0.10565370264334273,3.0,0.10565370264334273,0.10565370264334273,HIGH,,,0.10565370264334273,0.10565370264334273
+bookSpeakers,Elizabeth-PrideAndPrejudice,dominance,1.0,0.016347470093451222,1.0,,,LOW,,,,
+bookSpeakers,Emma-Emma,dominance,1.0,0.08180995485143694,1.0,,,HIGH,,,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,dominance,1.0,0.15395195568826103,4.0,0.07697597784413052,0.15395195568826103,HIGH,,,0.07697597784413052,0.15395195568826103
+bookSpeakers,Dr. Watson-SignOfFour,dominance,2.0,0.02268939718290719,1.0,,,HIGH,,,,
+bookSpeakers,Elizabeth-Persuasion,dominance,2.0,0.08618001843281636,4.0,0.04309000921640818,0.08618001843281636,LOW,0.04309000921640818,0.08618001843281636,,
+bookSpeakers,Elizabeth-PrideAndPrejudice,dominance,2.0,0.0452974700934512,4.0,0.0452974700934512,0.0226487350467256,HIGH,,,0.0452974700934512,0.0226487350467256
+bookSpeakers,Emma-Emma,dominance,2.0,0.020369954851436778,1.0,,,LOW,,,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,dominance,2.0,0.06413195568826113,2.0,0.06413195568826113,,LOW,0.06413195568826113,,,
+bookSpeakers,Dr. Watson-SignOfFour,dominance,3.0,0.016569397182906953,1.0,,,LOW,,,,
+bookSpeakers,Elizabeth-PrideAndPrejudice,dominance,3.0,0.07514747009345119,3.0,0.07514747009345119,0.07514747009345119,LOW,0.07514747009345119,0.07514747009345119,,
+bookSpeakers,Emma-Emma,dominance,3.0,0.045969954851436734,1.0,,,LOW,,,,
+bookSpeakers,Emma-Emma,dominance,4.0,0.05856995485143668,3.0,,0.02928497742571834,LOW,,0.02928497742571834,,
+bookSpeakers,Emma-Emma,dominance,5.0,0.024409954851436932,2.0,,0.024409954851436932,HIGH,,,,0.024409954851436932

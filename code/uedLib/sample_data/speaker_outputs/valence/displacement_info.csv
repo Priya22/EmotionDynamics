@@ -1,0 +1,19 @@
+Identifier,speaker_id,emotion,speaker_emo_displacement_number,displacement_peak_dist,displacment_length,displacement_rise_rate,displacement_recovery_rate,displacement_position,displacement_home-to-low_rate,displacement_low-to-home_rate,displacement_home-to-high_rate,displacement_high-to-home_rate
+bookSpeakers,Elizabeth-Persuasion,valence,1.0,0.034640359157594336,2.0,0.034640359157594336,,HIGH,,,0.034640359157594336,
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,1.0,0.10795595992373946,2.0,0.10795595992373946,,LOW,0.10795595992373946,,,
+bookSpeakers,Emma-Emma,valence,1.0,0.00643031218970358,3.0,0.00321515609485179,,HIGH,,,0.00321515609485179,
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,valence,1.0,0.004212746483144403,2.0,0.004212746483144403,,HIGH,,,0.004212746483144403,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,1.0,0.002884675898653488,1.0,,,HIGH,,,,
+bookSpeakers,Elizabeth-Persuasion,valence,2.0,0.023840359157594304,3.0,0.023840359157594304,0.023840359157594304,HIGH,,,0.023840359157594304,0.023840359157594304
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,2.0,0.1012448488126283,6.0,0.03374828293754276,0.05062242440631415,HIGH,,,0.03374828293754276,0.05062242440631415
+bookSpeakers,Emma-Emma,valence,2.0,0.004579030138421536,1.0,,,LOW,,,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2.0,0.016084675898653478,1.0,,,HIGH,,,,
+bookSpeakers,Elizabeth-Persuasion,valence,3.0,0.12853068173823956,3.0,0.12853068173823956,0.12853068173823956,LOW,0.12853068173823956,0.12853068173823956,,
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,3.0,0.06015595992373951,1.0,,,LOW,,,,
+bookSpeakers,Emma-Emma,valence,3.0,0.04817903013842151,4.0,,0.01605967671280717,LOW,,0.01605967671280717,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,3.0,0.14948467589865355,6.0,0.07474233794932678,0.049828225299551186,LOW,0.07474233794932678,0.049828225299551186,,
+bookSpeakers,Elizabeth-Persuasion,valence,4.0,0.06044035915759416,2.0,,0.06044035915759416,HIGH,,,,0.06044035915759416
+bookSpeakers,Emma-Emma,valence,4.0,0.01603031218970341,3.0,,0.008015156094851705,HIGH,,,,0.008015156094851705
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4.0,0.0014846758986534203,2.0,0.0014846758986534203,,HIGH,,,0.0014846758986534203,
+bookSpeakers,Elizabeth-Persuasion,valence,5.0,0.02993068173823954,2.0,0.02993068173823954,,LOW,0.02993068173823954,,,
+bookSpeakers,Emma-Emma,valence,5.0,0.10857903013842152,4.0,0.10857903013842152,0.05428951506921076,LOW,0.10857903013842152,0.05428951506921076,,

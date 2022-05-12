@@ -1,0 +1,17 @@
+Identifier,speaker_id,emotion,speaker_emo_displacement_number,displacement_peak_dist,displacment_length,displacement_rise_rate,displacement_recovery_rate,displacement_position,displacement_home-to-low_rate,displacement_low-to-home_rate,displacement_home-to-high_rate,displacement_high-to-home_rate
+bookSpeakers,Dr. Watson-SignOfFour,arousal,1.0,0.041532326402901165,2.0,0.041532326402901165,,HIGH,,,0.041532326402901165,
+bookSpeakers,Elizabeth-Persuasion,arousal,1.0,0.0069095613561707125,1.0,,,HIGH,,,,
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,1.0,0.002475344365785892,1.0,,,HIGH,,,,
+bookSpeakers,Emma-Emma,arousal,1.0,0.0817750243320659,1.0,,,LOW,,,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,1.0,0.10673933507654743,2.0,,0.10673933507654743,HIGH,,,,0.10673933507654743
+bookSpeakers,Dr. Watson-SignOfFour,arousal,2.0,0.07021804068861504,1.0,,,LOW,,,,
+bookSpeakers,Elizabeth-Persuasion,arousal,2.0,0.09590956135617068,1.0,,,HIGH,,,,
+bookSpeakers,Elizabeth-PrideAndPrejudice,arousal,2.0,0.04237534436578594,2.0,0.04237534436578594,,LOW,0.04237534436578594,,,
+bookSpeakers,Emma-Emma,arousal,2.0,0.01846733202437345,1.0,,,HIGH,,,,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,2.0,0.05553933507654743,3.0,0.027769667538273715,,LOW,0.027769667538273715,,,
+bookSpeakers,Elizabeth-Persuasion,arousal,3.0,0.06626340751001686,1.0,,,LOW,,,,
+bookSpeakers,Emma-Emma,arousal,3.0,0.04606733202437341,2.0,0.04606733202437341,,HIGH,,,0.04606733202437341,
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,arousal,3.0,0.10953933507654734,3.0,0.10953933507654734,0.10953933507654734,HIGH,,,0.10953933507654734,0.10953933507654734
+bookSpeakers,Emma-Emma,arousal,4.0,0.018175024332065914,4.0,0.006058341444021971,,LOW,0.006058341444021971,,,
+bookSpeakers,Emma-Emma,arousal,5.0,0.03586733202437353,1.0,,,HIGH,,,,
+bookSpeakers,Emma-Emma,arousal,6.0,0.04226733202437338,1.0,,,HIGH,,,,

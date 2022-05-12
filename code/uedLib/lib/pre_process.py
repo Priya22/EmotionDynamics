@@ -65,6 +65,8 @@ def prep(df, config):
     else:
         df['idCol'] = df[config.idCol]
 
+    if 'textIdCol' not in config:
+        config.textIdCol = 'utteranceId'
     if config.textIdCol not in df.columns:
         df[config.textIdCol] = np.arange(len(df))
     config.idCol = 'idCol'

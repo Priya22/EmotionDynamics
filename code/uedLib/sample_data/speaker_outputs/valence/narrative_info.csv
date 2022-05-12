@@ -1,0 +1,126 @@
+Identifier,speaker_id,emotion,speaker_utterance_index,global_utterance_index,speaker_rolling_window_index,speaker_word_index,speaker_word,speaker_emo_state_position,speaker_emo_state_is_peak,speaker_emo_displacement_counter,speaker_emo_displacement_number,speaker_emo_state_value,speaker_emo_in_home_base,speaker_emo_distance_home_base
+bookSpeakers,Emma-Emma,valence,1,228,0,1,thought,HOME,,,,0.7954,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,1,2,thought,HOME,,,,0.7722,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,2,3,clear,HOME,,,,0.771,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,3,4,wanting,HOME,,,,0.7834000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,4,5,happen,HOME,,,,0.7708,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,5,6,desirable,HOME,,,,0.7628,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,6,7,probability,HOME,,,,0.7414,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,7,8,congratulate,HOME,,,,0.7554000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,8,9,dear,HOME,,,,0.7794000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,9,10,feel,HIGH,0.0,-2.0,1.0,0.8044,0.0,0.003630312189703444
+bookSpeakers,Emma-Emma,valence,1,228,10,11,pride,HIGH,0.0,-1.0,1.0,0.8022,0.0,0.0014303121897034643
+bookSpeakers,Emma-Emma,valence,1,228,11,12,will,HIGH,1.0,0.0,1.0,0.8072000000000001,0.0,0.00643031218970358
+bookSpeakers,Emma-Emma,valence,1,228,12,13,proper,HOME,,,,0.781,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,13,14,will,HOME,,,,0.7446,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,14,15,real,HOME,,,,0.728,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,15,16,close,LOW,1.0,0.0,2.0,0.6406,0.0,0.004579030138421536
+bookSpeakers,Emma-Emma,valence,1,228,16,17,confirm,HOME,,,,0.6614000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,17,18,intimacy,HOME,,,,0.6736,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,18,19,alliance,HOME,,,,0.6731999999999999,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,19,20,raise,HOME,,,,0.7064,1.0,0.0
+bookSpeakers,Emma-Emma,valence,1,228,20,21,blush,HOME,,,,0.7876000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,2,245,21,22,will,HOME,,,,0.7668,1.0,0.0
+bookSpeakers,Emma-Emma,valence,2,245,22,23,dare,HOME,,,,0.7308,1.0,0.0
+bookSpeakers,Emma-Emma,valence,2,245,23,24,will,HOME,,,,0.7312000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,2,245,24,25,nonsense,LOW,1.0,0.0,3.0,0.597,0.0,0.04817903013842151
+bookSpeakers,Emma-Emma,valence,2,245,25,26,will,LOW,1.0,1.0,3.0,0.597,0.0,0.04817903013842151
+bookSpeakers,Emma-Emma,valence,2,245,26,27,soft,LOW,0.0,2.0,3.0,0.6093999999999999,0.0,0.03577903013842154
+bookSpeakers,Emma-Emma,valence,2,245,27,28,eyes,LOW,0.0,3.0,3.0,0.626,0.0,0.019179030138421482
+bookSpeakers,Emma-Emma,valence,2,245,28,29,trust,HOME,,,,0.6639999999999999,1.0,0.0
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,valence,1,406,29,1,faithful,HOME,,,,0.6998,1.0,0.0
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,valence,1,406,30,2,portrait,HIGH,0.0,-1.0,1.0,0.7026,0.0,0.0013127464831442781
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,valence,2,431,31,3,suspend,LOW,1.0,0.0,1.0,0.5798,0.0,0.004212746483144403
+bookSpeakers,Mr. Darcy-PrideAndPrejudice,valence,2,431,32,4,pleasure,HOME,,,,0.5883999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,1,435,33,1,ignorance,HOME,,,,0.4934,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,1,435,34,2,malice,LOW,0.0,-1.0,1.0,0.31639999999999996,0.0,0.07615595992373952
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,1,170,35,1,fair,HOME,,,,0.6422000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,1,170,36,2,professional,HOME,,,,0.7838,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,1,170,37,3,velocity,HOME,,,,0.7636000000000001,1.0,0.0
+bookSpeakers,Dr. Watson-SignOfFour,valence,1,192,38,1,powerful,HOME,,,,0.6522,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,39,4,will,HOME,,,,0.7552000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,40,5,clear,HOME,,,,0.7746000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,41,6,will,HOME,,,,0.7517999999999999,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,42,7,free,HOME,,,,0.7644,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,43,8,room,HOME,,,,0.7756000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,44,9,reason,HIGH,1.0,0.0,1.0,0.7922,0.0,0.002884675898653488
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,45,10,fact,HOME,,,,0.7574000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,46,11,good,HIGH,1.0,0.0,2.0,0.8054,0.0,0.016084675898653478
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,47,12,deal,HOME,,,,0.7699999999999999,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,2,220,48,13,missing,HOME,,,,0.6853999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,2,654,49,3,understood,LOW,1.0,0.0,1.0,0.2846,0.0,0.10795595992373946
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,2,654,50,4,idea,HOME,,,,0.4084,1.0,0.0
+bookSpeakers,Emma-Emma,valence,3,895,51,30,marry,HOME,,,,0.8004,1.0,0.0
+bookSpeakers,Emma-Emma,valence,3,895,52,31,thought,HIGH,1.0,0.0,4.0,0.8168,0.0,0.01603031218970341
+bookSpeakers,Emma-Emma,valence,3,895,53,32,offer,HIGH,0.0,1.0,4.0,0.8148,0.0,0.014030312189703409
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,3,764,54,5,will,HOME,,,,0.49079999999999996,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,3,346,55,14,safety,HOME,,,,0.6708000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,3,346,56,15,happen,HOME,,,,0.6696,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,57,16,remember,HOME,,,,0.6372,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,58,17,feeling,HOME,,,,0.6546,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,59,18,tired,HOME,,,,0.6184000000000001,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,60,19,idleness,LOW,0.0,-2.0,3.0,0.5384,0.0,0.034084675898653605
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,61,20,smoke,LOW,0.0,-1.0,3.0,0.44060000000000005,0.0,0.13188467589865355
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,62,21,business,LOW,1.0,0.0,3.0,0.42300000000000004,0.0,0.14948467589865355
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,63,22,fair,LOW,0.0,1.0,3.0,0.4242,0.0,0.14828467589865357
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,4,355,64,23,easy,LOW,0.0,2.0,3.0,0.5721999999999999,0.0,0.0002846758986536635
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,65,1,embarrass,HOME,,,,0.6692,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,66,2,feel,HOME,,,,0.6900000000000001,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,67,3,proposal,HOME,,,,0.6856,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,68,4,find,HOME,,,,0.6799999999999999,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,69,5,walking,HOME,,,,0.6508,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,70,6,will,HIGH,0.0,-1.0,1.0,0.774,0.0,0.032640359157594334
+bookSpeakers,Elizabeth-Persuasion,valence,1,268,71,7,associate,HIGH,1.0,0.0,1.0,0.776,0.0,0.034640359157594336
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,5,473,72,24,wasted,LOW,0.0,3.0,3.0,0.5482,0.0,0.024284675898653574
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,5,473,73,25,smith,HOME,,,,0.646,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,5,473,74,26,knowing,HOME,,,,0.675,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,5,473,75,27,good,HOME,,,,0.7001999999999999,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,5,473,76,28,thought,HOME,,,,0.6832,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,6,482,77,29,speed,HIGH,0.0,-1.0,4.0,0.7894,0.0,8.467589865346348e-05
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,6,482,78,30,launch,HIGH,1.0,0.0,4.0,0.7908,0.0,0.0014846758986534203
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,6,482,79,31,yellow,HOME,,,,0.7584,1.0,0.0
+bookSpeakers,Mr. Sherlock Holmes-SignOfFour,valence,6,482,80,32,forgive,HOME,,,,0.7270000000000001,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,2,398,81,8,smallest,HOME,,,,0.6546000000000001,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,82,9,game,HOME,,,,0.6468,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,83,10,overcome,HOME,,,,0.6489999999999999,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,84,11,regretting,HOME,,,,0.5603999999999999,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,85,12,father,HOME,,,,0.5604,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,86,13,omit,HOME,,,,0.5702,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,87,14,opportunity,HOME,,,,0.6108,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,88,15,appear,HOME,,,,0.6140000000000001,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,89,16,advantage,HIGH,0.0,-1.0,2.0,0.7464000000000001,0.0,0.005040359157594376
+bookSpeakers,Elizabeth-Persuasion,valence,3,400,90,17,company,HIGH,1.0,0.0,2.0,0.7652,0.0,0.023840359157594304
+bookSpeakers,Elizabeth-Persuasion,valence,4,402,91,18,embargo,HIGH,0.0,1.0,2.0,0.745,0.0,0.0036403591575943084
+bookSpeakers,Elizabeth-Persuasion,valence,4,402,92,19,will,HOME,,,,0.697,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,4,402,93,20,scarcely,HOME,,,,0.5664,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,94,21,tiresome,LOW,0.0,-1.0,3.0,0.43100000000000005,0.0,0.10773068173823952
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,95,22,book,LOW,1.0,0.0,3.0,0.4102,0.0,0.12853068173823956
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,96,23,read,LOW,0.0,1.0,3.0,0.5124,0.0,0.026330681738239603
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,97,24,poems,HOME,,,,0.5394,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,98,25,lady,HOME,,,,0.6938,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,99,26,thought,HIGH,1.0,0.0,4.0,0.8017999999999998,0.0,0.06044035915759416
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,100,27,dress,HIGH,0.0,1.0,4.0,0.7934,0.0,0.05204035915759431
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,101,28,hideous,HOME,,,,0.6636,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,102,29,taste,HOME,,,,0.6574000000000001,1.0,0.0
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,103,30,ashamed,LOW,0.0,-1.0,5.0,0.5178,0.0,0.02093068173823953
+bookSpeakers,Elizabeth-Persuasion,valence,5,405,104,31,formal,LOW,1.0,0.0,5.0,0.5088,0.0,0.02993068173823954
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,4,1056,105,6,will,HOME,,,,0.5997999999999999,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,106,7,knowing,HIGH,0.0,-3.0,2.0,0.7518,0.0,0.0026448488126283864
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,107,8,mother,HIGH,0.0,-2.0,2.0,0.782,0.0,0.03284484881262839
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,108,9,marry,HIGH,0.0,-1.0,2.0,0.8112,0.0,0.062044848812628395
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,109,10,planning,HIGH,1.0,0.0,2.0,0.8503999999999999,0.0,0.1012448488126283
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,110,11,confined,HIGH,0.0,1.0,2.0,0.768,0.0,0.01884484881262838
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,5,1141,111,12,accept,HIGH,0.0,2.0,2.0,0.7708,0.0,0.021644848812628403
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,112,13,blame,HOME,,,,0.6076,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,113,14,betrayed,HOME,,,,0.45280000000000004,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,114,15,concerned,LOW,1.0,0.0,3.0,0.3324,0.0,0.06015595992373951
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,115,16,rest,HOME,,,,0.4566,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,116,17,generous,HOME,,,,0.48719999999999997,1.0,0.0
+bookSpeakers,Elizabeth-PrideAndPrejudice,valence,6,1186,117,18,compassion,HOME,,,,0.6112,1.0,0.0
+bookSpeakers,Emma-Emma,valence,4,1525,118,33,will,HIGH,0.0,2.0,4.0,0.8024000000000001,0.0,0.0016303121897035533
+bookSpeakers,Emma-Emma,valence,4,1525,119,34,promise,HOME,,,,0.7894,1.0,0.0
+bookSpeakers,Emma-Emma,valence,4,1525,120,35,building,HOME,,,,0.7512000000000001,1.0,0.0
+bookSpeakers,Emma-Emma,valence,5,1583,121,36,suspect,LOW,0.0,-1.0,5.0,0.6218,0.0,0.023379030138421464
+bookSpeakers,Emma-Emma,valence,5,1583,122,37,midst,LOW,1.0,0.0,5.0,0.5366,0.0,0.10857903013842152
+bookSpeakers,Emma-Emma,valence,5,1583,123,38,great,LOW,0.0,1.0,5.0,0.5885999999999999,0.0,0.05657903013842158
+bookSpeakers,Emma-Emma,valence,5,1583,124,39,amusement,LOW,0.0,2.0,5.0,0.6098,0.0,0.035379030138421474
