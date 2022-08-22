@@ -48,6 +48,7 @@ Once you have the utterances, emotion lexicon, and the configuration files ready
     python lib/ued.py --config \<path-to-config-file\> --pre_process true --post_process true
 
 It is recommended to set both the pre_process and post_process flags to true, unless you are familiar with the inner workings of the code. It formats the input file and outputs in a readable format.
+
 ## Outputs
 
 A detailed list of the columns in each output file, with a brief description of what each metric is, is provided in this [codebook](https://docs.google.com/spreadsheets/d/1iyFB_FmXjFLB73wYJEFbhb3hXRmWivoKZzEOZMKo1rk/edit?usp=sharing). 
