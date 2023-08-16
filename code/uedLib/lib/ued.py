@@ -128,6 +128,7 @@ def ued(config, df):
         # min_turns = int(config.min_turns)
         df = df[df['NumTurns']>=config.min_turns]
 
+    df.sort_values(by=[config.idCol, config.timeCol], inplace=True)
     tdf = get_tokenized_df(df, textCol)
 
     stopdf = read_stopwords(config.stopword_path)

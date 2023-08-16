@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 import nltk
 import os, re, sys, json, csv, string, os, math
-import scipy 
+import scipy
+import scipy.stats as stats
 from tqdm import tqdm
 
 def ellipse_distance(a, b, x, y):
@@ -89,12 +90,15 @@ def in_range(sdf, emoCol, level=0.68):
     low_high = ['HOME' for _ in range(len(sdf))]
 
     x = sdf[emoCol].tolist()
+    num_points = len(x)
+
+    mult_val = abs(stats.t.ppf(q=(1-level)/2, df=num_points-1))
 
     xmean = np.nanmean(x)
     xstd = np.nanstd(x)
 
-    band_low = xmean - xstd
-    band_high = xmean + xstd 
+    band_low = xmean - (mult_val * xstd)
+    band_high = xmean + (mult_val * xstd)
 
     for i in range(len(x)):
         if x[i]<=band_high and x[i]>=band_low:

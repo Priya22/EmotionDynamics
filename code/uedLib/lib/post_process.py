@@ -90,7 +90,7 @@ def get_dispcurve_df(clean_ued, config):
 
 
 def get_dialogue_df(clean_ued, config):
-    dialoguedf = clean_ued.groupby(list(set(['Identifier', config.idCol, config.textIdCol]))).agg({config.textCol: 'first'}).reset_index()
+    dialoguedf = clean_ued.groupby(list(set(['Identifier', config.idCol, config.textIdCol]))).agg({config.textCol: 'first', config.timeCol: 'first'}).reset_index()
     rename_func = {
         'idCol': 'speaker_id',
         config.textIdCol: 'global_utterance_index',
